@@ -1,0 +1,258 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.flex-container{
+
+   display: flex;
+}
+  
+
+ 
+
+
+
+.colorCards1{
+
+    flex-direction: row;
+
+    background: 14px #d8b4fe;
+
+    border: 30px solid white;
+
+    text-align: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 240px;
+
+    margin-top: 40px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+}
+
+
+
+
+   
+
+.colorCards2{
+
+ flex-direction: row;
+
+ background: 14px #c084fc;
+
+ border: 30px solid white;
+
+ text-align: center;
+
+ justify-content: center;
+
+ width: 100%;
+
+ height: 240px;
+
+ margin-top: 40px;
+
+ margin-left: 20px;
+
+ margin-right: 20px;
+
+}
+
+.colorCards3{
+
+    flex-direction: row;
+
+    background: 14px #a855f7;
+
+    border: 30px solid white;
+
+    text-align: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 240px;
+
+    margin-top: 40px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+}
+
+.colorCards4{
+
+    flex-direction: row;
+
+    background: 14px #9333ea;
+
+    border: 30px solid white;
+
+    text-align: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 240px;
+
+    margin-top: 40px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+}
+
+.colorCards5{
+
+    flex-direction: row;
+
+    background: 14px #7e22ce;
+
+    border: 30px solid white;
+
+    text-align: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 240px;
+
+    margin-top: 40px;
+
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+}
+
+p{
+
+    text-align: center;
+
+    font-weight: bold;
+
+    justify-content: center;
+
+    margin-top: 245px;
+}
+   
+
+    
+
+
+
+    
+
+h1{
+
+   font-weight: bold;
+
+   text-align: center;
+
+   margin-top: 100px;
+}
+   
+
+
+
+body{
+
+  background-color: #cccccc;
+
+  position: absolute;
+
+  background-size: cover;
+
+  background-position: center;
+
+  box-sizing: border-box;
+
+}
+
+button{
+
+  margin-left: 500px;
+
+  margin-top: 50px;
+
+  margin-right: 500px;
+
+  display: inline-block;
+
+  padding: 15px 25px;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  text-align: center;
+
+  justify-content: center;
+
+  text-decoration: none;
+
+  outline: none;
+
+  color: #fff;
+
+  background-color: #ca5cdd;
+
+  border: none;
+
+  border-radius: 15px;
+
+  box-shadow: 0 9px #b39bd8;
+
+  
+
+}
+
+.button:hover {
+
+  background-color: #be2ed6;
+
+}
+
+.button:active {
+
+  background-color: #be2ed6;
+
+  box-shadow: 0 5px #b39bd8;
+
+  transform: translateY(4px);
+
+}
+
+.flex-containter div:hover {
+
+    background-color: none;
+
+}
+
+.flex-container div:active {
+
+    background-color: none;
+
+    box-shadow: 0 3px #BEBEBE;
+
+    transform: translateY(-6px);
+
+    transition: transform;
+
+}
+

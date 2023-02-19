@@ -6,56 +6,57 @@
 
  }
 
-const colorCard = document.querySelectorAll(".colorCards1", ".colorCards2", ".colorCards3", ".colorCards4", ".colorCards5");
+const colorCards = document.querySelectorAll(".colorCards1, .colorCards2, .colorCards3, .colorCards4, .colorCards5");
 
-const buttonElement = document.getElementById("btn");
+function generateRandomColor() {
 
-document.addEventListener('keydown', e => {
+  const letters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
 
-     if (e.key === ' ') {
+  let color = '#';
 
-      generatePalette();
+  for (let i = 0; i < 6; i++) {
+
+    color += letters[Math.floor(Math.random() * 16)];
 
   }
 
- document.getElementById("btn").addEventListener("click", generatePalette);
+  return color;
 
-     function generatePalette() {
+}
 
-    colorCard.forEach(colorCard => {
+function generatePallete() {
 
-       const newColor = generatePalette();
+  colorCards.forEach(card => {
 
-       });
+    const newColor = generateRandomColor();
 
-       
+    card.style.background = newColor;
 
-        colorCard.querySelector(".colorCards1", ".colorCards2", ".colorCards3", ".colorCards4", ".colorCards5").style.background = newColor;
+    card.querySelector("p").innerText = newColor;
 
-        colorCard.querySelector("p").innerText = newColor;
+  });
 
-    }
+}
+
+document.addEventListener('keydown', e => {
+
+  if (e.key === ' ') {
+
+   generatePallete();
+
+  }
 
 });
 
-       function generatePalette() {
+document.getElementById("btn").addEventListener("click", () => {
 
-        const hexArray = ['0','1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+  generatePallete();
 
-        
-
-        let color = '#';
-
-       
-
-        for (let i = 0; i < 6; i++) {
-
-            color += hexArray[Math.floor(Math.random() * hexArray.length)];
-
-          }
+});
+          
 
           
 
-          return color;
+          
 
-       }
+       

@@ -1,2 +1,2 @@
-# Color-Generator-
-Color Generator built with JavaScript, Html and CSS 
+# Color-Palette-Generator-
+Color Palette Generator built with JavaScript, Html and CSS 
